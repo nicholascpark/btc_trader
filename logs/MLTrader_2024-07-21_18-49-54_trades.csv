@@ -1,0 +1,17 @@
+time,strategy,identifier,symbol,side,type,status,multiplier,time_in_force,asset.strike,asset.multiplier,asset.asset_type,price,filled_quantity,trade_cost
+2023-11-13 09:30:00-05:00,MLTrader,2f6f71b87bfb44ce8d9ef4bff22cc34b,BTC-USD,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-11-13 09:30:00-05:00,MLTrader,2f6f71b87bfb44ce8d9ef4bff22cc34b,BTC-USD,buy,market,fill,1,gtc,0.0,1,stock,36491.7890625,1.37,0.0
+2023-11-13 10:30:00-05:00,MLTrader,b68f949240cb4d13972dacb75b93bf4e,BTC-USD,sell,limit,canceled,1,day,0.0,1,stock,,,
+2023-11-13 10:30:00-05:00,MLTrader,08e69bb0715c4d26a933299c1ce55671,BTC-USD,sell,stop,fill,1,day,0.0,1,stock,35397.035390625,1.37,0.0
+2023-11-13 11:30:00-05:00,MLTrader,3da566bb3a5e41a0990b9974eb3cfe0e,BTC-USD,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-11-13 11:30:00-05:00,MLTrader,3da566bb3a5e41a0990b9974eb3cfe0e,BTC-USD,buy,market,fill,1,gtc,0.0,1,stock,36491.7890625,1.35,0.0
+2023-11-13 12:30:00-05:00,MLTrader,4d362973f45c4aa994ebdaff79c204c0,BTC-USD,sell,limit,canceled,1,day,0.0,1,stock,,,
+2023-11-13 12:30:00-05:00,MLTrader,c7627d4f1676401fbf7a72fcb203ff05,BTC-USD,sell,stop,fill,1,day,0.0,1,stock,35397.035390625,1.35,0.0
+2023-11-13 13:30:00-05:00,MLTrader,5d7000b844b744dca904e0e8fa6790ca,BTC-USD,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-11-13 13:30:00-05:00,MLTrader,5d7000b844b744dca904e0e8fa6790ca,BTC-USD,buy,market,fill,1,gtc,0.0,1,stock,36491.7890625,1.329,0.0
+2023-11-13 14:30:00-05:00,MLTrader,119fb7afb6904c7fb6a3c0ec19b80c1b,BTC-USD,sell,limit,canceled,1,day,0.0,1,stock,,,
+2023-11-13 14:30:00-05:00,MLTrader,65a480e8fcfe4dbcb27e32f2ecc149ce,BTC-USD,sell,stop,fill,1,day,0.0,1,stock,35397.035390625,1.329,0.0
+2023-11-13 15:30:00-05:00,MLTrader,4e2939f55efc44d9ae3d6d28f8e6c89e,BTC-USD,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-11-13 15:30:00-05:00,MLTrader,4e2939f55efc44d9ae3d6d28f8e6c89e,BTC-USD,buy,market,fill,1,gtc,0.0,1,stock,36491.7890625,1.309,0.0
+2023-11-13 16:30:00-05:00,MLTrader,9d5bd57ac44949a2a43d1eb755c54e48,BTC-USD,sell,limit,canceled,1,day,0.0,1,stock,,,
+2023-11-13 16:30:00-05:00,MLTrader,e057b8537b064310bce1dfc59b8939b0,BTC-USD,sell,stop,fill,1,day,0.0,1,stock,35397.035390625,1.309,0.0

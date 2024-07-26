@@ -1,0 +1,5 @@
+time,strategy,identifier,symbol,side,type,status,multiplier,time_in_force,asset.strike,asset.multiplier,asset.asset_type,price,filled_quantity,trade_cost
+2022-11-11 09:30:00-05:00,MLTrader,9002b3f36f6141ab9b788af4381f5a1e,BTC-USD,sell,market,new,1,gtc,0.0,1,stock,,,
+2022-11-11 09:30:00-05:00,MLTrader,9002b3f36f6141ab9b788af4381f5a1e,BTC-USD,sell,market,fill,1,gtc,0.0,1,stock,17036.875,2.935,0.0
+2022-11-21 08:30:00-05:00,MLTrader,2503c73925ad4f4c9660d3f35621ad12,BTC-USD,buy,stop,canceled,1,day,0.0,1,stock,,,
+2022-11-21 08:30:00-05:00,MLTrader,9cb57d73ad544029af8f6e895aa93147,BTC-USD,buy,limit,fill,1,day,0.0,1,stock,15782.30078125,2.935,0.0

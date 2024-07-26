@@ -1,0 +1,19 @@
+time,strategy,identifier,symbol,side,type,status,multiplier,time_in_force,asset.strike,asset.multiplier,asset.asset_type,price,filled_quantity,trade_cost
+2023-12-04 09:30:00-05:00,MLTrader,a4eea26a88954387bc5bdfb61ff2b83d,BTC-USD,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-12-04 09:30:00-05:00,MLTrader,a4eea26a88954387bc5bdfb61ff2b83d,BTC-USD,buy,market,fill,1,gtc,0.0,1,stock,41986.265625,1.0,0.0
+2023-12-06 09:30:00-05:00,MLTrader,2a5d5685c8734b81a83c110fb60352df,BTC-USD,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-12-06 09:30:00-05:00,MLTrader,2a5d5685c8734b81a83c110fb60352df,BTC-USD,buy,market,fill,1,gtc,0.0,1,stock,43769.1328125,1.0,0.0
+2023-12-11 08:30:00-05:00,MLTrader,5493f904263c4bf19290ff7312c4a293,BTC-USD,sell,limit,canceled,1,day,0.0,1,stock,,,
+2023-12-11 08:30:00-05:00,MLTrader,0246a39350614e38b30f9fb747cdcba1,BTC-USD,sell,stop,fill,1,day,0.0,1,stock,41238.734375,1.0,0.0
+2023-12-12 09:30:00-05:00,MLTrader,ae99e4405a4745778805406010f69cce,BTC-USD,sell,stop,canceled,1,day,0.0,1,stock,,,
+2023-12-12 09:30:00-05:00,MLTrader,5e68ddfc75bd4fe09a2dffe9d029710d,BTC-USD,sell,limit,canceled,1,day,0.0,1,stock,,,
+2023-12-12 09:30:00-05:00,MLTrader,74171455bdf6485d99f014443af9df04,BTC-USD,sell,market,new,1,day,0.0,1,stock,,,
+2023-12-12 09:30:00-05:00,MLTrader,1a8a05688fec49088ee8894221cdc3f2,BTC-USD,sell,market,new,1,gtc,0.0,1,stock,,,
+2023-12-12 09:30:00-05:00,MLTrader,74171455bdf6485d99f014443af9df04,BTC-USD,sell,market,fill,1,day,0.0,1,stock,41468.46484375,1.0,0.0
+2023-12-12 09:30:00-05:00,MLTrader,1a8a05688fec49088ee8894221cdc3f2,BTC-USD,sell,market,fill,1,gtc,0.0,1,stock,41468.46484375,1.0,0.0
+2023-12-18 09:30:00-05:00,MLTrader,553275b60be54a158326c93ec4e7e14e,BTC-USD,buy,stop,canceled,1,day,0.0,1,stock,,,
+2023-12-18 09:30:00-05:00,MLTrader,75e0702f8c414f208a4fc4931868f416,BTC-USD,buy,limit,canceled,1,day,0.0,1,stock,,,
+2023-12-18 09:30:00-05:00,MLTrader,3be22c8c748447238eb0a6afbb98593e,BTC-USD,buy,market,new,1,day,0.0,1,stock,,,
+2023-12-18 09:30:00-05:00,MLTrader,bc2f4685f65b4f6281a7d84815e5700f,BTC-USD,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-12-18 09:30:00-05:00,MLTrader,3be22c8c748447238eb0a6afbb98593e,BTC-USD,buy,market,fill,1,day,0.0,1,stock,42641.51171875,1.0,0.0
+2023-12-18 09:30:00-05:00,MLTrader,bc2f4685f65b4f6281a7d84815e5700f,BTC-USD,buy,market,fill,1,gtc,0.0,1,stock,42641.51171875,2.0,0.0
