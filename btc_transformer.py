@@ -13,6 +13,8 @@ from ta.momentum import RSIIndicator, StochasticOscillator
 from ta.volatility import BollingerBands
 import warnings
 warnings.filterwarnings("ignore")
+import os
+os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 
 class TradingDataset(Dataset):
     def __init__(self, sequences, future_prices):
@@ -88,13 +90,16 @@ def safe_divide(a, b, fill_value=0):
 def safe_log(x):
     return np.log(np.where(x > 0, x, np.nan))
 
-def create_dataset(symbol, start_date, end_date, window_size=30):
-    # Fetch historical data
-    data = yf.download(symbol, start=start_date, end=end_date)
+def create_dataset(symbol, start_date, end_date, window_size=30, burn_in_period=100):
+    # Calculate the adjusted start date to account for the burn-in period
+    adjusted_start_date = (datetime.strptime(start_date, "%Y-%m-%d") - timedelta(days=burn_in_period)).strftime("%Y-%m-%d")
+    
+    # Fetch historical data with the adjusted start date
+    data = yf.download(symbol, start=adjusted_start_date, end=end_date)
     
     # Ensure we have data
     if data.empty:
-        raise ValueError(f"No data available for {symbol} between {start_date} and {end_date}")
+        raise ValueError(f"No data available for {symbol} between {adjusted_start_date} and {end_date}")
     
     # Forward fill any missing values
     data = data.ffill()
@@ -135,6 +140,9 @@ def create_dataset(symbol, start_date, end_date, window_size=30):
     
     # Drop any remaining NaN values
     data = data.dropna()
+    
+    # Remove the burn-in period data
+    data = data[data.index >= start_date]
     
     # Create sequences of data
     sequences = []
@@ -204,7 +212,7 @@ class TransformerModel(nn.Module):
 
 def train_model(model, train_loader, val_loader, num_epochs=50, learning_rate=1e-4):
     criterion = nn.MSELoss()
-    optimizer = optim.Adam(model.parameters(), lr=learning_rate, weight_decay=1e-5)
+    optimizer = optim.Adam(model.parameters(), lr=learning_rate)#, weight_decay=1e-5)
     scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'min', patience=5, factor=0.5)
     
     for epoch in range(num_epochs):
